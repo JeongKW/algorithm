@@ -5,17 +5,22 @@ import java.util.Scanner;
 public class HowMuch {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		String[] str = new String[10];
-		str[0] = "얼마에요?\n";
-		str[1] = " 원 입니다.\n";
-		str[2] = "몇개 드릴까요?\n";
-		str[3] = " 개 주세요.\n";
-		str[4] = "총 금액은 ";
-		str[5] = "원 입니다.\n";
-		str[6] = "비싸요, 깎아주세요.\n";
-		str[7] = "몇 프로요?\n";
-		str[8] = "그럼 %d원 주세요";
-		str[9] = "안 남아요, 안 팝니다.";
+		String[] str = {
+				"얼마에요?\n", " 원 입니다.\n", "몇개 드릴까요?\n",
+				" 개 주세요.\n", "총 금액은 ", "원 입니다.\n",
+				"비싸요, 깎아주세요.\n", "몇 프로요?\n", "그럼 %d원 주세요",
+				"안 남아요, 안 팝니다."
+		};
+//		str[0] = "얼마에요?\n";
+//		str[1] = " 원 입니다.\n";
+//		str[2] = "몇개 드릴까요?\n";
+//		str[3] = " 개 주세요.\n";
+//		str[4] = "총 금액은 ";
+//		str[5] = "원 입니다.\n";
+//		str[6] = "비싸요, 깎아주세요.\n";
+//		str[7] = "몇 프로요?\n";
+//		str[8] = "그럼 %d원 주세요";
+//		str[9] = "안 남아요, 안 팝니다.";
 		int val = 0, num = 0, res = 0, per = 0;
 		String result = "";
 		System.out.print(str[0]);
