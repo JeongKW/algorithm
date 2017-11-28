@@ -11,7 +11,7 @@ import java.math.*;
  */
 
 public class Bmi {
-	public String main() { // void에서 String 값으로 하여 Portal에서
+	public String main() { // return type 을 void에서 String 값으로 하여 Portal에서
 						   // String res 값에 누적 assignment 하기 위해 수정
 		String res = "";
 		Scanner scanner = new Scanner(System.in);
@@ -38,7 +38,7 @@ public class Bmi {
 		} else if(bmi >= 35) {
 			bm = "고도 비만";
 		}
-		return res += String.format("%s 님의 bmi지수는 %.2f이고 %s입니다.\n",
+		return res = String.format("%s 님의 bmi지수는 %.2f이고 %s입니다.\n",
 				name, bmi, bm); // return String 값
 		}
 }
