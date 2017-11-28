@@ -3,7 +3,7 @@ package com.bit.loop;
 import java.util.Scanner;
 
 public class InputSum {
-	public static void main(String[] args) {
+	public int main() {
 		Scanner scanner = new Scanner(System.in);
 		int input = 0, sum = 0;
 		String opcode = "";
@@ -17,11 +17,14 @@ public class InputSum {
 				opcode = scanner.next();
 				if(opcode.equals("+")) {
 					sum += input;
-				} else {
+				} else if(opcode.equals("-")){
 					sum -= input;
+				} else {
+					System.out.println("+, - 둘중 하나를 입력해주세요");
 				}
 			}
 		}
-		System.out.println("결과는 " + sum + " 입니다.");
+//		System.out.println("결과는 " + sum + " 입니다.");
+		return sum;
 	}
 }
