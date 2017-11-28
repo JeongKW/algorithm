@@ -24,8 +24,10 @@ public class Portal {
 				i++;
 			}
 			System.out.println(res); // 결과 출력
-		} else {
+		} else if(sel == 2){
 			System.out.println(ins.main());
+		} else {
+			System.out.println("0~2 값을 입력해주세요");
 		}
 		
 	}
